@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+    <link rel="stylesheet" href="./style.css">
+    <title>50 Spill</title>
+</head>
+
+<body style='margin: 0px;'>
+<div style='padding: 10px;'>
+    <a href='..'>Trykk her for å gå tilbake</a>
+</div>
+<!--Code goes here-->
+
+<main>
+    <div class="game-container">
+        <h1 class="span-2">50</h1>
+        <section class="spiller1">
+            <h2>Spiller 1</h2>
+            <button id="spiller1-knapp" onclick="p1.kastTerning()"><h2>KAST</h2></button>
+            <div class="score-container">
+                <h3>+<span id="spiller1-add">0</span></h3>
+                <h2><span id="spiller1-sum">0</span></h2>
+            </div>
+        </section>
+        <section class="spiller2">
+            <h2>Spiller 2</h2>
+            <button id="spiller2-knapp" onclick="p2.kastTerning()"><h2>KAST</h2></button>
+            <div class="score-container">
+                <h3>+<span id="spiller2-add">0</span></h3>
+                <h2><span id="spiller2-sum">0</span></h2>
+            </div>
+        </section>
+        <button id="reset-knapp" class="span-2" onclick="p1.reset()"><h2>Reset</h2></button>
+        <h2 id="vinn-tekst" class="span-2"></h2>
+    </div>
+</main>
+
+<!--Code goes here-->
+
+<!-- <script src="./script.js"></script> -->
+<script src="./script_but_better.js"></script>
+</body>
+</html>
