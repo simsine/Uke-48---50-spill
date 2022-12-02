@@ -1,4 +1,4 @@
-class Spill{
+class Spill{ // Declaring the game class
     constructor(ovreGrense){
         this.vinnTekst = document.querySelector("#vinn-tekst");
         this.ovreGrense = ovreGrense;
@@ -21,13 +21,12 @@ class Spiller extends Spill{   // Declaring the player class
 
         this.sumTekst = document.querySelector(`#spiller${spillerNO}-sum`);
         this.addTekst = document.querySelector(`#spiller${spillerNO}-add`);
-
     }
     kastTerning(){
         if (p1.poeng < 50 && p2.poeng < 50) {
 	        let tilfeldigKast = Math.floor(Math.random() * 6 + 1);
-	        this.alleKast.push(tilfeldigKast);
 	        this.poeng += tilfeldigKast;
+	        this.alleKast.push(tilfeldigKast);
 	
 	        this.addTekst.innerHTML = tilfeldigKast;
 	        this.sumTekst.innerHTML = this.poeng;
@@ -42,7 +41,6 @@ class Spiller extends Spill{   // Declaring the player class
         this.addTekst.innerHTML = "0";
     }
 }
-
     // Initializing the players
 p1 = new Spiller(1);
 p2 = new Spiller(2);
